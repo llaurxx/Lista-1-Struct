@@ -1,0 +1,14 @@
+numeros = gets.delete("[]").split(",").map(&:to_i)
+
+p numeros.sort
+valormax = numeros.max
+valormin = numeros.min
+p valormax
+p valormin
+
+novoHash = Hash.new
+novoHash = { :menor => valormin, :maior => valormax}
+
+puts novoHash
+
+

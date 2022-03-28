@@ -1,0 +1,19 @@
+renda = gets.to_f
+
+if (renda >= 0) and (renda <= 2000.00)
+    puts ("Isento")
+
+elsif (renda > 2000.00) and (renda <= 3000.00)
+    calculo = (renda*8)/100
+    puts "%0.02f" % calculo
+
+elsif (renda > 3000.00) and (renda <= 4500.00)
+    calculo = (renda*18)/100
+    puts "%0.02f" % calculo
+
+else 
+    calculo = (renda*28)/100
+    puts "%0.02f" % calculo
+
+end
+
